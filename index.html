@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- This goes inside the <div class="reveal"> tag in your index.html -->
+			<div class="slides">
+				<!-- Slide 1: Title and Email -->
+				<section>
+					<h1>Quarterly Earnings Report</h1>
+					<p>A Presentation for Stakeholders</p>
+					<p>
+						<small>Contact: 24f1000884@ds.study.iitm.ac.in</small>
+					</p>
+				</section>
+
+				<!-- Slide 2: Markdown Content -->
+				<section data-markdown>
+					<textarea data-template>
+						## Q3 Financial Highlights
+						- Revenue increased by 15% YoY.
+						- Net profit margin at 22%.
+						- Successful launch of a new product line.
+					</textarea>
+				</section>
+
+				<!-- Slide 3: Animated Elements (Fragments) -->
+				<section>
+					<h2>Key Performance Indicators (KPIs)</h2>
+					<ul>
+						<li class="fragment">User Growth: +250,000 new users</li>
+						<li class="fragment">Customer Retention: 92%</li>
+						<li class="fragment fade-up">Market Share: Gained 2% in key demographics</li>
+					</ul>
+				</section>
+
+				<!-- Slide 4: Code Sample with Syntax Highlighting -->
+				<section>
+					<h2>Data Analysis Snippet</h2>
+					<pre><code class="python" data-line-numbers="1-2|4-5">
+			import pandas as pd
+			import numpy as np
+
+			# Calculate quarterly revenue growth
+			q3_revenue = 1.15 * q2_revenue
+					</code></pre>
+				</section>
+
+				<!-- Slide 5: Mathematical Equation (Financial Formula) -->
+				<section>
+					<h2>Compound Annual Growth Rate (CAGR)</h2>
+					<p>The formula used for our projections:</p>
+					\[ CAGR = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{n}}} - 1 \]
+					<aside class="notes">
+						Explain that 'n' is the number of years. This formula is key to our 5-year forecast model.
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
